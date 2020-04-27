@@ -1,2 +1,2 @@
 # phonebook
-phonebook App using nodeJS
+phonebook App using nodeJS and ReactJS
