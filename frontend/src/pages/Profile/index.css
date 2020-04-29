@@ -1,0 +1,44 @@
+
+.profile-container header{
+    background-color: #7E7E79;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+    
+}
+
+.profile-container header span{
+    margin: 0;
+    color: #202020;
+    font-size: 18pt;
+}
+
+.profile-container header img {
+    max-width: 4vw;
+}
+
+.profile-container header div .button-network{
+    margin: 1vw;
+    width: 6vw;
+    height: auto;
+    background-color: #ffbf00 ;
+    border: 0;
+    border-radius: 8px; 
+    color: #2B2B29;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18pt;
+    transition: filter .2s;
+    text-decoration: none;
+    padding: 0 1vw;
+    
+}
+.profile-container header div .button-network:hover {
+    filter: brightness(70%);
+}
+
+
+
+

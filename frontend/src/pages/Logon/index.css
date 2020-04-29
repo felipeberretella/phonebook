@@ -1,0 +1,44 @@
+.logon-container {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #54B9D7;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 100vh;
+    
+}
+.logon-container  section {
+
+    background-color: #7E7E79;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 450px; 
+    padding: 40px;
+    margin: auto;
+}
+
+.logon-container  img {
+    
+    width: 30vw;  
+    padding: 10px;
+    margin: auto; 
+    
+}
+
+
+.logon-container  section a { 
+    color: #2B2B29;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.logon-container  h1 {
+    margin: 10px;
+    color: #2B2B29;
+    font-size: 30px;
+    
+}
