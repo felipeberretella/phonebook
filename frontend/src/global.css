@@ -8,9 +8,14 @@
 
 }
 
+html{
+    background-color: #54B9D7;
+}
 body {
+    
     font: 400 14px Oswald, sans-serif;
 }
+
 
 input, button, textarea {
     font: 400 14px Oswald, sans-serif;
@@ -38,7 +43,7 @@ form input {
     background-color: #ffbf00 ;
     border: 0;
     border-radius: 8px ;
-    color: #2B2B29;;
+    color: #2B2B29;
     font-weight: bold;
     margin-top: 16px;
     margin-bottom: 30px;

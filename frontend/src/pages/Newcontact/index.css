@@ -1,4 +1,4 @@
-.register-container {
+.register-contact {
     width: 100vw;
     border-radius: 8px;
     background-color: #54B9D7;
@@ -6,7 +6,7 @@
     margin: auto;
     height: 100vh;
 }
-.register-container .content {
+.register-contact .content {
     width: 900px;
     margin:  auto;
     display: flex;
@@ -17,27 +17,27 @@
     background-color: #7E7E79;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
 }
-.register-container  section {
+.register-contact  section {
     padding: 10px;
     margin: auto;
 }
-.register-container  form {
+.register-contact  form {
     max-width: 400px; 
     padding: 10px;
     margin: auto;
 }
-.register-container section h1 {
+.register-contact section h1 {
     margin: 10px;
     color: #202020;
     font-size: 50px;
 }
-.register-container section p {
+.register-contact section p {
     margin: 10px;
     color: #202020;
     font-size: 30px;
     
 }
-.register-container  form a { 
+.register-contact  form a { 
     color: #202020;
     font-size: 18px;
     text-decoration: none;
