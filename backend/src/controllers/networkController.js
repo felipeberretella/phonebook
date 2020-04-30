@@ -10,7 +10,7 @@ module.exports = {
         await connection('network').insert({        
                 name,
                 phoneNumber,
-                email,
+                email,  
                 linkedIn,
                 facebook,
                 user_id, 
