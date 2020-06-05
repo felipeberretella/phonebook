@@ -5,19 +5,37 @@ const connection = require ('../database/connection')
 module.exports = {
     async create (req, res) {
     
-    const {name, email, password} = req.body
+        try {
+            const {name, email, password} = req.body
 
-    const id = crypto.randomBytes(4).toString('HEX')
+            const [user] = await connection('users').where('email', email)
 
-    await connection('users').insert({
-        id,
-        name,
-        email,
-        password
-    })   
+            if (!user) {
 
-    return res.json({id})
+                const hash =  crypto.createHmac("sha256", "password").update(password).digest("hex")
 
+                const id = crypto.randomBytes(4).toString('HEX')
+                
+            
+                await connection('users').insert({
+                    id,
+                    name,
+                    email,
+                    password:hash                
+                })   
+
+                return res.status(200).send('user created!')
+            } else {
+
+                return res.status(400).send({error:'User already exists'})
+
+            }
+
+        } catch (err) {
+
+            return res.status(400).send({error:'Registration failed'})
+        }
+        
     },
     async delete (req,res){
 
